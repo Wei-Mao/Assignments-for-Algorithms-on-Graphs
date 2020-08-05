@@ -61,6 +61,8 @@ class Undirected_Graph
     int number_of_components()
     {
       /* Return the number of connected components by modified Depth-First Search(DFS)
+	 Time Complexity: O(|V| + |E|)
+	 Space Complexity: O(|V|* max # of adjacent vertices of all vertices)
       */
       vector<bool> visited(adjacency_list.size(), false);
       int num_of_cc = 0;

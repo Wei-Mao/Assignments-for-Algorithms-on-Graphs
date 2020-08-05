@@ -26,6 +26,8 @@ class Undirected_Graph
 	    visited(vector(bool)): Marker of visit for all nodes.
 	 Output:
 	    Void.
+	 Time Complexity: O(# of edges in the connected component of v)
+	 Space Complexity: O(|V|*max number of adjacent vertices)
       */
       visited[v] = true;
       for(int i(0); i < adjacency_list[v].size(); i++)
@@ -46,6 +48,8 @@ class Undirected_Graph
 	    y(int): zero-based index of another vertex
 	 Output:
 	    1 if there is a path between x and y, 0 otherwise.
+	 Time Complexity: the same as explore.
+	 Space Complexity: the same as explore.
       */
       vector<bool>  visited(adjacency_list.size(), false);
       explore(x, visited);
