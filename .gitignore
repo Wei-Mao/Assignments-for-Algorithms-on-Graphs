@@ -8,5 +8,6 @@
 *.rs
 *.scala
 *.swo
+*.swp
 
 
