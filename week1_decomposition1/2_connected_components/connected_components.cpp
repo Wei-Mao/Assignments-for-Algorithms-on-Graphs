@@ -1,14 +1,81 @@
 #include <iostream>
 #include <vector>
+using namespace std;
 
 using std::vector;
 using std::pair;
 
-int number_of_components(vector<vector<int> > &adj) {
-  int res = 0;
-  //write your code here
-  return res;
-}
+class Undirected_Graph
+{
+  private:
+    vector<vector<int>> adjacency_list;
+
+  public:
+    Undirected_Graph(vector<vector<int>> _adjacency_list):
+      adjacency_list(_adjacency_list)
+    {
+    }
+    //Since C++11, you can copy arrays directly with std::array:
+
+    void explore(int v, vector<bool> &visited)
+    {
+      /* Mark all vertices reachable from given vertex with index v
+	 Input:
+	    v(int): Zero-based index for the given vertex.
+	    visited(vector(bool)): Marker of visit for all nodes.
+	 Output:
+	    Void.
+      */
+      visited[v] = true;
+      for(int i(0); i < adjacency_list[v].size(); i++)
+      {
+	int w = adjacency_list[v][i];;
+	if(!visited[w])
+	{
+	  explore(w, visited);
+	}
+      }
+    }
+
+    int reach(int x, int y) 
+    {
+      /* Check the reachability between vertices x and y
+	 Input: 
+	    x(int): zero-based index of the vertex
+	    y(int): zero-based index of another vertex
+	 Output:
+	    1 if there is a path between x and y, 0 otherwise.
+      */
+      vector<bool>  visited(adjacency_list.size(), false);
+      explore(x, visited);
+      if(visited[y] == true) 
+      {
+	return 1;
+      }
+      else
+      {
+        return 0;
+      }
+    }
+
+    int number_of_components()
+    {
+      /* Return the number of connected components by modified Depth-First Search(DFS)
+      */
+      vector<bool> visited(adjacency_list.size(), false);
+      int num_of_cc = 0;
+      
+      for(int v(0); v < adjacency_list.size(); v++)
+	if(!visited[v])
+	{
+	  explore(v, visited);
+	  num_of_cc++;
+	}
+      return num_of_cc;
+    }
+
+
+};
 
 int main() {
   size_t n, m;
@@ -20,5 +87,6 @@ int main() {
     adj[x - 1].push_back(y - 1);
     adj[y - 1].push_back(x - 1);
   }
-  std::cout << number_of_components(adj);
+  Undirected_Graph graph(adj);
+  std::cout << graph.number_of_components() << endl;
 }
