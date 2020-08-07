@@ -10,4 +10,4 @@ Programming Assignments in C++ and Python for Algorithms on Graphs offered by Co
 
 [Problem 2: Determining an Order of Courses](https://github.com/Wei-Mao/Assignments-for-Algorithms-on-Graphs/tree/master/week2_decomposition2/2_toposort)
 
-[Problem 3: Checking Whether Any Intersection in a City Reachable from Any Other](https://github.com/Wei-Mao/Assignments-for-Algorithms-on-Graphs/tree/master/week2_decomposition2/3_strongly_connected)
+[Problem 3: Checking Whether Any Intersection in a City is Reachable from Any Other](https://github.com/Wei-Mao/Assignments-for-Algorithms-on-Graphs/tree/master/week2_decomposition2/3_strongly_connected)
