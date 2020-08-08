@@ -14,4 +14,5 @@ Programming Assignments in C++ and Python for Algorithms on Graphs offered by Co
 
 ## Week 3 Paths in Graphs I
 [Problem 1: Computing the Minimum Number of Flight Segments](https://github.com/Wei-Mao/Assignments-for-Algorithms-on-Graphs/tree/master/week3_paths1/1_bfs)
+
 [Problem 2: Checking whether a Graph is Bipartite](https://github.com/Wei-Mao/Assignments-for-Algorithms-on-Graphs/tree/master/week3_paths1/2_bipartite)
