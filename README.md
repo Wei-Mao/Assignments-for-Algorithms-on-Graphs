@@ -23,3 +23,7 @@ Programming Assignments in C++ and Python for Algorithms on Graphs offered by Co
 [Problem 2: Detecting Anomalies in Currency Exchange Rates](https://github.com/Wei-Mao/Assignments-for-Algorithms-on-Graphs/tree/master/week4_paths2/2_negative_cycle)
 
 [Problem 3: Advanced Problem: Exchanging Money Optimally](https://github.com/Wei-Mao/Assignments-for-Algorithms-on-Graphs/tree/master/week4_paths2/3_shortest_paths)
+
+## Week 5 Minimum Spanning Trees
+[Problem 1: Building Roads to Connect Cities](https://github.com/Wei-Mao/Assignments-for-Algorithms-on-Graphs/tree/master/week5_mst/1_connecting_points)
+[Problem 2: Clustering](https://github.com/Wei-Mao/Assignments-for-Algorithms-on-Graphs/tree/master/week5_mst/2_clustering)
